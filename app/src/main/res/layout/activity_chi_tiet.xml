@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1EA5185"
+    tools:context=".ChiTietActivity">
+
+    <ImageView
+        android:id="@+id/imageChiTiet"
+        android:layout_width="195dp"
+        android:layout_height="329dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iphone1" />
+
+    <TextView
+        android:id="@+id/txtChiTietTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#F8F8F8"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageChiTiet"
+        app:layout_constraintStart_toEndOf="@+id/imageChiTiet"
+        app:layout_constraintTop_toTopOf="@+id/imageChiTiet"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/txtChiTietDonGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="#F1F1F1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtChiTietTen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtChiTietTen"
+        app:layout_constraintTop_toBottomOf="@+id/txtChiTietTen" />
+
+    <Button
+        android:id="@+id/btnKetThucChiTiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#F44336"
+        android:text="Tro Ve"
+        app:layout_constraintEnd_toEndOf="@+id/imageChiTiet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageChiTiet"
+        app:layout_constraintTop_toBottomOf="@+id/imageChiTiet" />
+
+    <Button
+
+        android:id="@+id/btnCheckOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="#2B2B2B"
+        android:backgroundTint="#4CAF50"
+        android:text="CheckOut"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKetThucChiTiet"
+        app:layout_constraintStart_toEndOf="@+id/btnKetThucChiTiet"
+        app:layout_constraintTop_toTopOf="@+id/btnKetThucChiTiet"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
