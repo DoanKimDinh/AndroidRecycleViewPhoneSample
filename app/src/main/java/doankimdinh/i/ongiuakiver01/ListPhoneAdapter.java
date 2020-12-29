@@ -59,6 +59,7 @@ public class ListPhoneAdapter extends RecyclerView.Adapter<ListPhoneAdapter.View
         private ImageView imageView;
         private TextView txtName;
         private TextView txtPrice;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.imageView = itemView.findViewById(R.id.imageView);

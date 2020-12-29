@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new ItemPhone(R.drawable.iphone5,"iphone5",420000));
         arrayList.add(new ItemPhone(R.drawable.iphone6,"iphone6",450000));
 
-
-
         listPhoneAdapter = new ListPhoneAdapter(arrayList,this);
 
         recyclerView.setAdapter(listPhoneAdapter);
